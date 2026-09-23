@@ -19,9 +19,9 @@ use: {
 },
 projects: [
   {
-    name: 'chromium',
+    name: 'edge',
     use: {
-      ...devices['Desktop Chrome'],
+      ...devices['Desktop Edge'],
     },
   },
 ],
