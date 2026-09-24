@@ -34,7 +34,7 @@ export async function createExcel() { try {
   });
   worksheet.addRow({
     tc_id: 'TC_004',
-    group: 'Sanity',
+    group: 'Smoke',
     username: 'Admin',
     password: 'admin123'
   });
