@@ -4,7 +4,7 @@
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\u463482\\node-learning\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "LoginExcelInterface.spec.ts"
+      "AdminExcelInterface.spec.ts"
     ],
     "configFile": "C:\\Users\\u463482\\node-learning\\playwright.config.ts",
     "rootDir": "C:/Users/u463482/node-learning/tests",
@@ -66,17 +66,15 @@
   },
   "suites": [
     {
-      "title": "LoginExcelInterface.spec.ts",
-      "file": "LoginExcelInterface.spec.ts",
+      "title": "AdminExcelInterface.spec.ts",
+      "file": "AdminExcelInterface.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login Test write excel file - TC_TC_001 @Smoke",
+          "title": "Login Test write excel file ",
           "ok": true,
-          "tags": [
-            "Smoke"
-          ],
+          "tags": [],
           "tests": [
             {
               "timeout": 30000,
@@ -88,132 +86,37 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 27090,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"OrangeHRM\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"OrangeHRM\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\n    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:23:22",
-                    "location": {
-                      "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
-                      "column": 22,
-                      "line": 23
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 21 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
-                        "column": 22,
-                        "line": 23
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveTitle\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"OrangeHRM\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveTitle\" with timeout 5000ms\u001b[22m\n\n\n\u001b[0m \u001b[90m 21 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m   \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:23:22\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T09:48:12.875Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--0ffaf-xcel-file---TC-TC-001-Smoke-edge\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--0ffaf-xcel-file---TC-TC-001-Smoke-edge\\error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
-                    "column": 22,
-                    "line": 23
-                  }
-                },
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 30439,
+                  "duration": 23644,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "true\n"
+                      "text": "Login failed for TC_ TC_001\n"
+                    },
+                    {
+                      "text": "Login failed for TC_ TC_002\n"
+                    },
+                    {
+                      "text": "Login failed for TC_ TC_003\n"
+                    },
+                    {
+                      "text": "Login successful for TC_ TC_004\n"
                     }
                   ],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-09-24T09:48:43.197Z",
+                  "retry": 0,
+                  "startTime": "2026-09-25T12:31:12.257Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--0ffaf-xcel-file---TC-TC-001-Smoke-edge-retry1\\test-finished-1.png"
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--0ffaf-xcel-file---TC-TC-001-Smoke-edge-retry1\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--0ffaf-xcel-file---TC-TC-001-Smoke-edge-retry1\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "flaky"
-            }
-          ],
-          "id": "d9fabcd9734e60405dc0-5a817ddec8fa05d68888",
-          "file": "LoginExcelInterface.spec.ts",
-          "line": 19,
-          "column": 1
-        },
-        {
-          "title": "Login Test write excel file - TC_TC_002 @Smoke",
-          "ok": true,
-          "tags": [
-            "Smoke"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "edge",
-              "projectName": "edge",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 28334,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "true\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T09:49:14.952Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--d5c2f-xcel-file---TC-TC-002-Smoke-edge\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--d5c2f-xcel-file---TC-TC-002-Smoke-edge\\video.webm"
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge\\video.webm"
                     }
                   ]
                 }
@@ -221,165 +124,9 @@
               "status": "expected"
             }
           ],
-          "id": "d9fabcd9734e60405dc0-5bae409898532b5b72a5",
-          "file": "LoginExcelInterface.spec.ts",
-          "line": 19,
-          "column": 1
-        },
-        {
-          "title": "Login Test write excel file - TC_TC_003 @Smoke",
-          "ok": true,
-          "tags": [
-            "Smoke"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "edge",
-              "projectName": "edge",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 25556,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "true\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T09:49:43.357Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--2abe4-xcel-file---TC-TC-003-Smoke-edge\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--2abe4-xcel-file---TC-TC-003-Smoke-edge\\video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d9fabcd9734e60405dc0-9ee18a8a9155ca7d4d7a",
-          "file": "LoginExcelInterface.spec.ts",
-          "line": 19,
-          "column": 1
-        },
-        {
-          "title": "Login Test write excel file - TC_TC_004 @Smoke",
-          "ok": false,
-          "tags": [
-            "Smoke"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "edge",
-              "projectName": "edge",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31921,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "true\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-24T09:50:08.928Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--1fe0e-xcel-file---TC-TC-004-Smoke-edge\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--1fe0e-xcel-file---TC-TC-004-Smoke-edge\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--1fe0e-xcel-file---TC-TC-004-Smoke-edge\\error-context.md"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 32074,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "true\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-09-24T09:50:42.418Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--1fe0e-xcel-file---TC-TC-004-Smoke-edge-retry1\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--1fe0e-xcel-file---TC-TC-004-Smoke-edge-retry1\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login--1fe0e-xcel-file---TC-TC-004-Smoke-edge-retry1\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "d9fabcd9734e60405dc0-67fa40b8b9a718a00be7",
-          "file": "LoginExcelInterface.spec.ts",
-          "line": 19,
+          "id": "61bb9082253e4f9e0dfd-081e2f23cf17df01feca",
+          "file": "AdminExcelInterface.spec.ts",
+          "line": 13,
           "column": 1
         }
       ]
@@ -387,11 +134,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-24T09:48:10.625Z",
-    "duration": 185777.441,
-    "expected": 2,
+    "startTime": "2026-09-25T12:31:10.132Z",
+    "duration": 27168.843,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
-    "flaky": 1
+    "unexpected": 0,
+    "flaky": 0
   }
 }

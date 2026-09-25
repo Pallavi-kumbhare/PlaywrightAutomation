@@ -38,7 +38,18 @@ export async function createExcel() { try {
     username: 'Admin',
     password: 'admin123'
   });
-
+worksheet.addRow({
+    tc_id: 'TC_005',
+    group: 'Smoke',
+    username: 'Admin77',
+    password: 'admin123'
+  });
+  worksheet.addRow({
+    tc_id: 'TC_006',
+    group: 'Smoke',
+    username: 'User2',
+    password: 'admin123'
+  });
   await workbook.xlsx.writeFile("C:/Users/u463482/node-learning/test-data/WriteInExcel.xlsx");
 
   console.log('Excel file created');
