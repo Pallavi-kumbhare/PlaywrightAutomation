@@ -4,8 +4,9 @@ export default defineConfig({
 testDir: './tests',
 retries: 1,
 workers: 3,
-reporter: 'html',
-
+reporter:[ ['html'],
+['json', { outputFile: 'test-results.json' }]
+],
 use: {
   headless: false,
 
@@ -19,10 +20,12 @@ use: {
 },
 projects: [
   {
-    name: 'chromium',
+    name: 'edge',
     use: {
-      ...devices['Desktop Chrome'],
+      ...devices['Desktop Edge'],
+      channel: 'msedge',
     },
+  
   },
 ],
 

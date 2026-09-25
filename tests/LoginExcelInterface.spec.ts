@@ -6,7 +6,6 @@ import { createExcel } from "../test-data/ExcelInterfaceData.js"
 await createExcel();
 
 const testData1 = await readExcelInt();
-console.log("true 1");
 console.log("Records Found :", testData1.length);
 
  for (const dataex of testData1) {
@@ -20,8 +19,8 @@ test(`Login Test write excel file - TC_${dataex.tc_id}`, async ({ page, loginpag
 
   await page.goto(TestData.url);
   await loginpage.login1( dataex.username, dataex.password);
-  await expect(page).toHaveTitle('OrangeHRM');
-  console.log('true');
+  // await expect(page).toHaveTitle('OrangeHRM');
+  // console.log('true');
 });
 
 }

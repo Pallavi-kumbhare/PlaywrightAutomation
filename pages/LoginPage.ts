@@ -1,4 +1,4 @@
-import type { Page, Locator } from '@playwright/test';
+import { type Page, type Locator, expect } from '@playwright/test';
 import { HomePage } from './HomePage.js';
 
 
@@ -26,7 +26,12 @@ export class LoginPage extends HomePage{
         await this.username.fill(userName);
          await this.password.fill(passWord);
         await this.loginButton.click();
+
+        //  await expect(this.page).toHaveTitle('OrangeHRM');
+        //   console.log('true');
     }
+
+    
 
     async Logout(): Promise<void> {
         await this.username3.click();
