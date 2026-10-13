@@ -11,7 +11,7 @@ console.log(data.username);
 console.log(data.password);
 console.log(data.browser);
   
-test(`Login Test using excel file - TC_${data.tcid}`, async ({ page, loginpage, homepage, adminpage}) => {
+test(`Login Test using excel file - TC_${data.tcid}}`, async ({ page, loginpage, homepage, adminpage}) => {
    
 
 await page.goto(TestData.url);

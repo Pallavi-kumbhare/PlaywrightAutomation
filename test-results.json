@@ -3,8 +3,7 @@
     "argv": [
       "C:\\Program Files\\nodejs\\node.exe",
       "C:\\Users\\u463482\\node-learning\\node_modules\\@playwright\\test\\cli.js",
-      "test",
-      "AdminExcelInterface.spec.ts"
+      "test"
     ],
     "configFile": "C:\\Users\\u463482\\node-learning\\playwright.config.ts",
     "rootDir": "C:/Users/u463482/node-learning/tests",
@@ -18,7 +17,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "projects": [
@@ -27,7 +26,7 @@
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 3
         },
         "id": "edge",
         "name": "edge",
@@ -50,6 +49,10 @@
         {
           "outputFile": "test-results.json"
         }
+      ],
+      [
+        "C:\\Users\\u463482\\node-learning\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -73,6 +76,839 @@
       "specs": [
         {
           "title": "Login Test write excel file ",
+          "ok": false,
+          "tags": [
+            "TC_CA_001",
+            "Smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "failed",
+                  "duration": 0,
+                  "error": {
+                    "message": "Error: End of data reached (data length = 0, asked index = 4). Corrupted zip ?",
+                    "stack": "Error: End of data reached (data length = 0, asked index = 4). Corrupted zip ?\n    at NodeBufferReader.checkIndex (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\DataReader.js:26:19)\n    at NodeBufferReader.checkOffset (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\DataReader.js:17:14)\n    at NodeBufferReader.readData (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\NodeBufferReader.js:14:10)\n    at NodeBufferReader.readString (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\DataReader.js:75:49)\n    at ZipEntries.isSignature (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\zipEntries.js:39:37)\n    at ZipEntries.readEndOfCentral (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\zipEntries.js:164:35)\n    at ZipEntries.load (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\zipEntries.js:255:14)\n    at C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\load.js:48:24\n    at ZipReader._process (C:\\Users\\u463482\\node-learning\\node_modules\\exceljs\\lib\\utils\\zip-stream.js:38:19)"
+                  },
+                  "errors": [
+                    {
+                      "message": "Error: End of data reached (data length = 0, asked index = 4). Corrupted zip ?\n\u001b[2m    at NodeBufferReader.checkIndex (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\DataReader.js:26:19)\u001b[22m\n\u001b[2m    at NodeBufferReader.checkOffset (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\DataReader.js:17:14)\u001b[22m\n\u001b[2m    at NodeBufferReader.readData (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\NodeBufferReader.js:14:10)\u001b[22m\n\u001b[2m    at NodeBufferReader.readString (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\reader\\DataReader.js:75:49)\u001b[22m\n\u001b[2m    at ZipEntries.isSignature (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\zipEntries.js:39:37)\u001b[22m\n\u001b[2m    at ZipEntries.readEndOfCentral (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\zipEntries.js:164:35)\u001b[22m\n\u001b[2m    at ZipEntries.load (C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\zipEntries.js:255:14)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\node_modules\\jszip\\lib\\load.js:48:24\u001b[22m\n\u001b[2m    at ZipReader._process (C:\\Users\\u463482\\node-learning\\node_modules\\exceljs\\lib\\utils\\zip-stream.js:38:19)\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:33:40.479Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 39247,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\AdminExcelInterface.spec.ts",
+                        "column": 16,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file `\u001b[39m\u001b[33m,\u001b[39m{ tag\u001b[33m:\u001b[39m [\u001b[32m'@TC_CA_001'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Smoke'\u001b[39m]}\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m ({ page \u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m adminpage }) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m exceldata \u001b[36mof\u001b[39m testData1) {\n \u001b[90m 22 |\u001b[39m     \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( exceldata\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m exceldata\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\AdminExcelInterface.spec.ts:19:16\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:33:45.317Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "61bb9082253e4f9e0dfd-081e2f23cf17df01feca",
+          "file": "AdminExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Login in an application",
+          "ok": false,
+          "tags": [
+            "TC_CA_002",
+            "canvas"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:33:41.435Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 34135,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts",
+                        "column": 25,
+                        "line": 7
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     constructor (\u001b[36mprotected\u001b[39m page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m){ }\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigate(url \u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)}\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at HomePage.navigate (C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts:7:25)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\AdminExcelInterface.spec.ts:46:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:34:26.963Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "61bb9082253e4f9e0dfd-f6adaf57767beb64a07a",
+          "file": "AdminExcelInterface.spec.ts",
+          "line": 44,
+          "column": 1
+        },
+        {
+          "title": "Login in an application test",
+          "ok": true,
+          "tags": [
+            "TC_CA_003",
+            "canvas"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:33:41.454Z",
+                  "annotations": [],
+                  "attachments": []
+                },
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 843,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Test case 3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:35:08.589Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-test-edge-retry1\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-test-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-in-an-application-test-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "61bb9082253e4f9e0dfd-ae7ebeb3e349f1794e4d",
+          "file": "AdminExcelInterface.spec.ts",
+          "line": 54,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "AdminTest.spec.ts",
+      "file": "AdminTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Update username",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31613,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts",
+                        "column": 25,
+                        "line": 7
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     constructor (\u001b[36mprotected\u001b[39m page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m){ }\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigate(url \u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)}\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at HomePage.navigate (C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts:7:25)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\AdminTest.spec.ts:11:21\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:33:38.430Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31072,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts",
+                        "column": 25,
+                        "line": 7
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     constructor (\u001b[36mprotected\u001b[39m page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m){ }\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigate(url \u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)}\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at HomePage.navigate (C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts:7:25)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\AdminTest.spec.ts:11:21\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:34:20.542Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminTest-Update-username-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8b108fad8b3322d1eb45-b31a9926aec9aa14cc0e",
+          "file": "AdminTest.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "LoginExcelInterface.spec.ts",
+      "file": "LoginExcelInterface.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login Test write excel file - TC_TC_001",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 31455,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:33:41.101Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 30661,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:34:15.895Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-001-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9fabcd9734e60405dc0-52037d99ac98cb5dda81",
+          "file": "LoginExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Login Test write excel file - TC_TC_002",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 31165,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:34:56.840Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-002-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-002-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-002-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 38932,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:35:37.721Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-002-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-002-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-002-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9fabcd9734e60405dc0-e72dc974a9c74a301540",
+          "file": "LoginExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Login Test write excel file - TC_TC_003",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 35318,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\pages\\LoginPage.ts",
+                        "column": 29,
+                        "line": 26
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[name=\"username\"]')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m\n \u001b[90m 25 |\u001b[39m     \u001b[36masync\u001b[39m login1(userName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m passWord\u001b[33m:\u001b[39m string)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musername\u001b[33m.\u001b[39mfill(userName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m          \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpassword\u001b[33m.\u001b[39mfill(passWord)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.login1 (C:\\Users\\u463482\\node-learning\\pages\\LoginPage.ts:26:29)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:20:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:36:20.991Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 36816,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:36:59.920Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-003-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9fabcd9734e60405dc0-fdfca2f7f3a5c45b0d2c",
+          "file": "LoginExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Login Test write excel file - TC_TC_004",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 31338,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:37:39.435Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-004-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-004-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-004-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 2,
+                  "status": "timedOut",
+                  "duration": 38366,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:38:18.901Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-004-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-004-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-004-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9fabcd9734e60405dc0-660bfc6d1bb1e605a557",
+          "file": "LoginExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Login Test write excel file - TC_TC_005",
           "ok": true,
           "tags": [],
           "tests": [
@@ -84,39 +920,21 @@
               "projectName": "edge",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 25,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 23644,
+                  "duration": 34588,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Login failed for TC_ TC_001\n"
-                    },
-                    {
-                      "text": "Login failed for TC_ TC_002\n"
-                    },
-                    {
-                      "text": "Login failed for TC_ TC_003\n"
-                    },
-                    {
-                      "text": "Login successful for TC_ TC_004\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-09-25T12:31:12.257Z",
+                  "startTime": "2026-10-09T10:38:59.928Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge\\test-finished-1.png"
-                    },
-                    {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\AdminExcelInterface-Login-Test-write-excel-file--edge\\video.webm"
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-005-edge\\video.webm"
                     }
                   ]
                 }
@@ -124,9 +942,956 @@
               "status": "expected"
             }
           ],
-          "id": "61bb9082253e4f9e0dfd-081e2f23cf17df01feca",
-          "file": "AdminExcelInterface.spec.ts",
-          "line": 13,
+          "id": "d9fabcd9734e60405dc0-d5fa23d43d8691a0bc8f",
+          "file": "LoginExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "Login Test write excel file - TC_TC_006",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 25,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31459,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts",
+                        "column": 14,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m`Login Test write excel file - TC_${dataex.tc_id}`\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page\u001b[33m,\u001b[39m loginpage\u001b[33m,\u001b[39m homepage\u001b[33m,\u001b[39m adminpage}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m   \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m   \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( dataex\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m dataex\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginExcelInterface.spec.ts:19:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:39:35.512Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-006-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-006-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-006-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 28,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 32283,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:40:08.207Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-006-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-006-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginExcelInterface-Login-Test-write-excel-file---TC-TC-006-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d9fabcd9734e60405dc0-6b6150b688634a2ffc62",
+          "file": "LoginExcelInterface.spec.ts",
+          "line": 17,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "LoginTest.spec.ts",
+      "file": "LoginTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login in an application",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 34151,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts",
+                        "column": 25,
+                        "line": 7
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     constructor (\u001b[36mprotected\u001b[39m page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m){ }\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigate(url \u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)}\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at HomePage.navigate (C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts:7:25)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTest.spec.ts:13:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:34:54.027Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31278,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts",
+                        "column": 25,
+                        "line": 7
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\HomePage.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m     constructor (\u001b[36mprotected\u001b[39m page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m){ }\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigate(url \u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(url)}\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at HomePage.navigate (C:\\Users\\u463482\\node-learning\\pages\\HomePage.ts:7:25)\u001b[22m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTest.spec.ts:13:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:35:36.190Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTest-Login-in-an-application-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "539b1c6d7fcc511d6019-eab7bebd1d244e0b588e",
+          "file": "LoginTest.spec.ts",
+          "line": 9,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "LoginTestExcel.spec.ts",
+      "file": "LoginTestExcel.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login Test using excel file - TC_TC_001}",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 33934,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:35:10.069Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31941,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:35:45.521Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-001--edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "521697214d1ebb096a84-f691dcb72b701ff86dd0",
+          "file": "LoginTestExcel.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "Login Test using excel file - TC_TC_002}",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 37192,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:36:20.690Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 36092,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:37:01.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-002--edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "521697214d1ebb096a84-9de65952c41d2de88dd4",
+          "file": "LoginTestExcel.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "Login Test using excel file - TC_TC_003}",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31317,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:37:40.586Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 36965,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:38:22.381Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-003--edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "521697214d1ebb096a84-c46e844994babd4f9c69",
+          "file": "LoginTestExcel.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "Login Test using excel file - TC_TC_004}",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31110,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:39:05.358Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 27,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 31273,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts",
+                        "column": 12,
+                        "line": 17
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 15 |\u001b[39m    \n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1( data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'OrangeHRM'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'true'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestExcel.spec.ts:17:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:39:38.496Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestExcel-Login-Test-using-excel-file---TC-TC-004--edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "521697214d1ebb096a84-89936af882914c0cb132",
+          "file": "LoginTestExcel.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "LoginTestInterface.spec.ts",
+      "file": "LoginTestInterface.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login using interface folder",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 34280,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestInterface.spec.ts",
+                        "column": 12,
+                        "line": 13
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(logindata\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin1(logindata\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m logindata\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39mexpectedMessage)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestInterface.spec.ts:13:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:36:09.853Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31640,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestInterface.spec.ts",
+                        "column": 12,
+                        "line": 13
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(logindata\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[36mconst\u001b[39m loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin1(logindata\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m logindata\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[33mTestData\u001b[39m\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39mexpectedMessage)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestInterface.spec.ts:13:12\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:36:51.821Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestInterface-Login-using-interface-folder-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e201bd8cdd304cd19159-5a2205805667fc0d7a55",
+          "file": "LoginTestInterface.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "LoginTestJson.spec.ts",
+      "file": "LoginTestJson.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login using Json file",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "edge",
+              "projectName": "edge",
+              "results": [
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31294,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestJson.spec.ts",
+                        "column": 15,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m    \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1(\u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1(\u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39mvalidLogin\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39mvalidLogin\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestJson.spec.ts:8:15\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-09T10:37:30.984Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge\\error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 31112,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\u463482\\node-learning\\tests\\LoginTestJson.spec.ts",
+                        "column": 15,
+                        "line": 8
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m\n \u001b[90m  7 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m    \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39murl)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1(\u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39minvalidLogin\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mawait\u001b[39m loginpage\u001b[33m.\u001b[39mlogin1(\u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39mvalidLogin\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m \u001b[33mTestData1\u001b[39m\u001b[33m.\u001b[39mvalidLogin\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 11 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\u463482\\node-learning\\tests\\LoginTestJson.spec.ts:8:15\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-10-09T10:38:04.064Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\u463482\\node-learning\\test-results\\LoginTestJson-Login-using-Json-file-edge-retry1\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "16bbb9a29d860300ec20-618951fec9fc2c0258ea",
+          "file": "LoginTestJson.spec.ts",
+          "line": 5,
           "column": 1
         }
       ]
@@ -134,11 +1899,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-25T12:31:10.132Z",
-    "duration": 27168.843,
-    "expected": 1,
+    "startTime": "2026-10-09T10:33:36.703Z",
+    "duration": 425421.839,
+    "expected": 2,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 15,
     "flaky": 0
   }
 }

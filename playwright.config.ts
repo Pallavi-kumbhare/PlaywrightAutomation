@@ -5,9 +5,11 @@ testDir: './tests',
 retries: 1,
 workers: 3,
 reporter:[ ['html'],
-['json', { outputFile: 'test-results.json' }]
+['json', { outputFile: 'test-results.json' }],
+['allure-playwright']
 ],
 use: {
+  parallel: true,
   headless: false,
 
   screenshot: 'on',

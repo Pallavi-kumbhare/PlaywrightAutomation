@@ -9,7 +9,6 @@ const testData1 = await readExcelInt();
 console.log("Records Found :", testData1.length);
 
  for (const dataex of testData1) {
-  console.log("true 2");
 console.log(`a=${dataex.tc_id}`);
 console.log(dataex.username);
 console.log(dataex.password);
@@ -19,8 +18,7 @@ test(`Login Test write excel file - TC_${dataex.tc_id}`, async ({ page, loginpag
 
   await page.goto(TestData.url);
   await loginpage.login1( dataex.username, dataex.password);
-  // await expect(page).toHaveTitle('OrangeHRM');
-  // console.log('true');
+
 });
 
 }
