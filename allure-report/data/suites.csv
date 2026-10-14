@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","20362","Update username","edge","2026-10-14","failed","2026-10-14","","AdminTest.spec.ts","",""
+"","11569","Login in an application","edge","2026-10-14","passed","2026-10-14","","LoginTest.spec.ts","",""

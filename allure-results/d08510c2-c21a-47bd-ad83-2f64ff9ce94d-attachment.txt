@@ -1,2 +1,0 @@
-Login failed for TC_ TC_001
-Login failed for TC_ TC_002
