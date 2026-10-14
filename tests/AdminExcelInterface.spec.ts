@@ -33,6 +33,7 @@ test(`Login Test write excel file `,{ tag: ['@TC_CA_001', '@Smoke']},async ({ pa
         }
     else {
         console.log("Login failed for TC_", exceldata.tc_id);
+        console.log("Error Message :", await page.getByText('Invalid credentials').textContent());
         }
 
 }
